@@ -1,8 +1,6 @@
 #include <iostream>
 
 using namespace std;
-
-// printA يحتوي على دالة إسمها A هنا قمنا بتعريف كلاس إسمه
 class A {
 
     public:
@@ -13,7 +11,6 @@ class A {
 
 };
 
-// printB و يحتوي على دالة إسمها A يرث من الكلاس B هنا قمنا بتعريف كلاس إسمه
 class B: public A {
 
     public:
@@ -24,7 +21,6 @@ class B: public A {
 
 };
 
-// printC و يحتوي على دالة إسمها B يرث من الكلاس C هنا قمنا بتعريف كلاس إسمه
 class C: public B {
 
     public:
@@ -35,13 +31,9 @@ class C: public B {
 
 };
 
-// main() هنا قمنا بتعريف الدالة
 int main()
 {
-    // c إسمه C هنا قمنا بإنشاء كائن من الكلاس
     C c;
-
-    // c هنا قمنا باستدعاء جميع الدوال الموجودة في الكائن
     c.printA();
     c.printB();
     c.printC();
